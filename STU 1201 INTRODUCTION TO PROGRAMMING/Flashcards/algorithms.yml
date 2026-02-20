@@ -57,26 +57,29 @@ cards:
     answer: "Exponent."
   - id: "algorithms-card-18"
     question: "Outline the pseudo-code for the Student Grading System example provided."
-    answer: "1. Input four marks (M1, M2, M3, M4).
-2. Calculate the sum of the marks.
-3. Calculate the average by dividing the sum by 4.
-4. If the average is 50 or above, print "PASS".
-5. Otherwise, print "FAIL"."
+    answer: |
+      1. Input four marks (M1, M2, M3, M4).
+      2. Calculate the sum of the marks.
+      3. Calculate the average by dividing the sum by 4.
+      4. If the average is 50 or above, print "PASS".
+      5. Otherwise, print "FAIL".
   - id: "algorithms-card-19"
     question: "What is the algorithm to calculate the area of a circle given its radius `r`?"
-    answer: "STEP 1: START
-STEP 2: INPUT r
-STEP 3: PI = 3.14159
-STEP 4: AREA = PI * r * r
-STEP 5: PRINT AREA
-STEP 6: STOP"
+    answer: |
+      STEP 1: START
+      STEP 2: INPUT r
+      STEP 3: PI = 3.14159
+      STEP 4: AREA = PI * r * r
+      STEP 5: PRINT AREA
+      STEP 6: STOP
   - id: "algorithms-card-20"
     question: "What is the algorithm to read two numbers and output their sum?"
-    answer: "STEP 1: START
-STEP 2: INPUT X1, X2
-STEP 3: SUM = X1 + X2
-STEP 4: PRINT SUM
-STEP 5: STOP"
+    answer: |
+      STEP 1: START
+      STEP 2: INPUT X1, X2
+      STEP 3: SUM = X1 + X2
+      STEP 4: PRINT SUM
+      STEP 5: STOP
   - id: "algorithms-card-21"
     question: "What is the pass mark for the Student Grading System example?"
     answer: "50."
