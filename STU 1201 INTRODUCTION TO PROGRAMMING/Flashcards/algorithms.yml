@@ -29,11 +29,11 @@ cards:
               *
               /
               %
-              '**'
+              **
     answer: |
             + -> Addition
             - -> Subtraction
             * -> Multiplication
             / -> Division
             % -> Modulus
-            '**' -> Exponent
+            ** -> Exponent
