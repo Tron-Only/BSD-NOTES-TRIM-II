@@ -1,127 +1,224 @@
-# System Analysis and Design: Introduction to System Analysis and Design
-## Concepts of System Analysis and Design
+# System Analysis and Design: Introduction
 
-> [!INFO] System
-> An orderly grouping of interdependent components, linked together according to a plan, to achieve a specific objective
+## Key Terminologies
+1. **System**: An orderly grouping of interdependent components, linked together according to a plan, to achieve a specific objective.
+2. **System Analysis**: The process of collecting factual data, understanding processes, identifying problems, and recommending feasible improvements.
+3. **System Design**: The process of specifying a new system's architecture, components, modules, interfaces, and data.
+4. **System Analyst**: A professional who analyzes, designs, and modifies systems to ensure compatibility and user effectiveness.
+5. **SDLC**: System Development Life Cycle - a common methodology for systems development featuring several phases.
+
+---
+
+## 1. System Fundamentals
+> [!abstract] System
+> A system is an orderly grouping of interdependent components, linked together according to a plan, to achieve a specific objective.
 
 ### Parts/Elements of a System
-1. **Components** - This involves the conversion of input into output
-2. **Inputs and Outputs** - the objective of any system is to generate an output that is of value to the user. An input can include goods, services, or information while the output must be within the expectations of the user like materials, human resources, data, information etc.
-> [!NOTE] Note
-> The first step in specifying the nature of the input required to operate a system is determination of the output.
+1. **Components** - The individual parts that enable conversion of input into output.
 
- 3. **Boundaries and Interfaces** - 
-*Boundaries* are the limits that identify the system's components, processes and interrelationships when it interacts with other systems. 
+2. **Inputs and Outputs** - The objective of any system is to generate an output of value to the user.
+   - **Input**: Goods, services, information, materials, human resources, or data.
+   - **Output**: Must meet user expectations and deliver value.
 
-**For example**: A teller system in the bank is confined to the deposits, withdrawals and related customer activities such as checking and saving accounts but limits foreclosures which is processed by a 'mortgage loan system'.
+> [!note] Important Principle
+> The first step in specifying the nature of input required to operate a system is determination of the desired output.
 
-*Interfaces* are interactions between the system and the environment
+3. **Boundaries and Interfaces**
+   - **Boundaries**: The limits that identify the system's components, processes, and interrelationships when it interacts with other systems.
+   - **Interfaces**: The interactions between the system and its environment.
 
- 4.  **Environment** - This is the supra-system(overall system) within which an organization functions and defines everything that interacts with the system elements.
- 5. **Constraints/Control** - These are elements that regulate the system operation, e.g policies, specifications, standards, and regulations, which constitute decision-making subsystem that controls activities related to input, processing and output.
- 6. **Purpose** - This is the key objective(s) that a system must fulfill to the intended user
-A proper example is the human body
+> [!example] Bank Teller System
+> A teller system in a bank is confined to deposits, withdrawals, and related customer activities (checking and saving accounts), but excludes foreclosures, which are processed by a separate mortgage loan system.
 
-| **System** | **Subsystems**                                                               | **Interfaces**                                       | **Environment** | **Input**                                    | **Output**                                                     |
-| ---------- | ---------------------------------------------------------------------------- | ---------------------------------------------------- | --------------- | -------------------------------------------- | -------------------------------------------------------------- |
-| Human Body | Nervous system<br><br>Digestive system<br><br>Respiratory system<br><br>etc. | Skin, Hair<br><br>Ear, Nose<br><br>Mouth<br><br>etc. | Atmosphere      | Oxygen<br><br>Water<br><br>Foods<br><br>etc. | Energy<br><br>Waste products<br><br>Carbon dioxide<br><br>etc. |
-Similarly an exam processing system has the following:
+4. **Environment** - The supra-system (overall system) within which an organization operates and defines everything that interacts with the system elements.
 
-| System                 | Subsystems                                                 | Interfaces                          | Environment                                                                      | Input                            | Output                                                     | Constraints/controls                                        |
-| ---------------------- | ---------------------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------- |
-| Exam processing system | Database systems, operating system, grading functions etc. | Input forms,<br><br>Dashboards etc. | Department<br><br>University<br><br>Administrator<br><br>Students, lecturers etc | Raw score: CAT, assignment, exam | Individual results, overall results, reports and summaries | Submission dates and deadlines,<br><br>No partial marks etc |
+5. **Constraints/Control** - Elements that regulate system operations, such as policies, specifications, standards, and regulations. These constitute a decision-making subsystem controlling activities related to input, processing, and output.
 
-### Types of Systems
-#### 1. Physical/Abstract Systems
-These are content entities that are static or dynamic parts in an operation, e.g., the chairs and tables in a computer center that facilitate its operation because they can be *seen* and *counted*
+6. **Purpose** - The key objective(s) that a system must fulfill for the intended user.
 
-Data, programs, outputs and applications in a computer system change with user demand or priority of the information requests. Such entities form dynamic entities of a computer system.
+### System Examples
 
-Abstract systems are non-physical entities. For example, formulas of relationship between sets of variables, or models that represent a physical situation.  
+**Example 1: Human Body System**
 
-#### 2. Open/Closed Systems
-It depends on the extent of system independence. 
+| **System** | **Subsystems**                                      | **Interfaces**                     | **Environment** | **Input**                | **Output**                                     |
+| ---------- | --------------------------------------------------- | ---------------------------------- | --------------- | ------------------------ | ---------------------------------------------- |
+| Human Body | Nervous system, Digestive system, Respiratory system | Skin, Hair, Ear, Nose, Mouth, etc. | Atmosphere      | Oxygen, Water, Foods     | Energy, Waste products, Carbon dioxide         |
 
-A system is said to be an open system if there exists interaction between the system and its environment. 
+**Example 2: Exam Processing System**
 
-If there is no interaction of the system with its environment, the system is said to be a closed system.
+**Example 2: Exam Processing System**
 
-> [!NOTE] Note
-> It is nearly impossible to have a closed system because a system needs to interact with its environment and in system analysis almost all systems are open systems, which get affected by their environment.
-#### 3. Natural/Man-made Systems
-Natural systems are products of evolution whereas man-made systems have been created by human beings to satisfy their specific needs.
+| **System**             | **Subsystems**                                    | **Interfaces**         | **Environment**                                  | **Input**                    | **Output**                                 | **Constraints/Controls**                    |
+| ---------------------- | ------------------------------------------------- | ---------------------- | ------------------------------------------------ | ---------------------------- | ------------------------------------------ | ------------------------------------------- |
+| Exam Processing System | Database systems, Operating system, Grading logic | Input forms, Dashboards | Department, University, Administrators, Students | Raw scores: CAT, Assignment, Exam | Individual results, Overall results, Reports | Submission deadlines, No partial marks |
 
-### General classification of computer-based systems
-#### 1. Transaction Processing System
-Automate the handling of data about business activities or transactions, which can be thought of as simple, discrete events in the life of an organization. 
+---
 
-Data about each transaction are captured, transaction verified and accepted or rejected, and validated transactions are stored for later aggregation. 
+## 2. Types of Systems
 
-To analyze and design TPS one must focus on the firm’s current procedures for transaction processing, whether manual or automated. This requires careful tracking of data capture, flow, processing, and output. 
+### 1. Physical/Abstract Systems
+**Physical Systems** are concrete entities that are static or dynamic in operation.
+- **Example**: Chairs and tables in a computer center facilitate operations because they can be *seen* and *counted*.
+- **Dynamic Example**: Data, programs, outputs, and applications in a computer system change based on user demand or information request priority.
 
-The goal of TPS development is to improve transaction processing by speeding them up, using fewer people, improving efficiency and accuracy, integrating it with other information systems, or providing information not previously available.
+**Abstract Systems** are non-physical entities.
+- **Example**: Formulas showing relationships between sets of variables, or mathematical models representing physical situations.
 
+### 2. Open/Closed Systems
+Classification depends on the extent of system independence.
 
-#### 2. Management Information System (MIS)
-Takes the raw data available through a TPS and converts them into a meaningful aggregated form that managers need to conduct their responsibilities. 
+**Open System**: A system that interacts with its environment.
+**Closed System**: A system that does not interact with its environment.
 
-To analyze and design such a system, one must have a good understanding of what kind of information managers require and how they use the information in their jobs.
+> [!note] Important Note
+> It is nearly impossible to have a truly closed system because systems need to interact with their environment. In system analysis, almost all systems are open systems that are affected by their environment.
 
-#### 3. Decision Support Systems (DSS)
-They are solely meant to help organization decision makers make decision. 
-DSS provides an interactive environment in which decision makers can quickly manipulate data and models of business operations. 
+### 3. Natural/Man-made Systems
+**Natural Systems**: Products of evolution (e.g., ecosystems, human body).
+**Man-made Systems**: Created by humans to satisfy specific needs (e.g., computer systems, transportation systems).
 
-To analyze and design such system, one must concentrate on its DSS components that include database, model base and the user dialogue.
+---
 
-#### 4. Expert Systems (ES)
-It attempts to codify and manipulate knowledge rather than information. 
-Knowledge representations describe the way expert approach situations in a specific problem domain. 
+## 3. Computer-Based Information Systems
 
-To analyze and design such system one must acquire knowledge of the expert in the particular problem domain.
+### 1. Transaction Processing System (TPS)
+> [!abstract] TPS
+> Automates the handling of data about business activities or transactions—simple, discrete events in the life of an organization.
 
-### Characteristics of a System
-1. **Interdependence** - Components depend on one another in a system.
-2. **Order** - Refers to the arrangement of components that helps to achieve objectives.  It portrays system-subsystem relationship.
-3. **Integration** - Parts of a system work together within the system even though each part performs a unique function.
-4. **Central objective** - Systems are goal-driven entities and every system must have some goals and objectives.
-5. **Interaction** - Interrelationship between these components enables a system to perform.
+**Key Functions**:
+- Captures data about each transaction
+- Verifies and validates transactions (accept or reject)
+- Stores validated transactions for later aggregation
 
+**Development Focus**:
+- Analyze current procedures for transaction processing (manual or automated)
+- Track data capture, flow, processing, and output carefully
 
-### System Analysis and Design
-- **System Analysis** – is the process of collecting factual data, understand the process involved, identifying problems and recommending feasible suggestions for improving the system functioning. This involves studying the business processes, gathering operational data, understand the information flow, finding out bottlenecks and evolving solutions for overcoming the weaknesses of the system so as to achieve the organizational goals.
+**Goal**: Improve transaction processing by:
+- Speeding up processes
+- Using fewer people
+- Improving efficiency and accuracy
+- Integrating with other information systems
+- Providing previously unavailable information
 
+### 2. Management Information System (MIS)
+> [!abstract] MIS
+> Converts raw data from TPS into meaningful aggregated information that managers need to conduct their responsibilities.
 
-- **System design** – is the process of specifying the new system. It involves detailing the tasks to be carried out and the data to be input, output and stored on files. Initially a logical design is produced, specifying the functions to be carried out by the new system without tying these down to specific hardware or software. Then a physical design is produced, giving precise details of hardware, software, file formats etc.
+**Development Focus**:
+- Understand what information managers require
+- Understand how managers use information in their jobs
 
-#### System Analyst
-They are in charge of analyzing, designing and modifying various systems and processes to ensure compatibility and user effectiveness.
+### 3. Decision Support Systems (DSS)
+> [!abstract] DSS
+> Designed solely to help organizational decision makers make decisions.
 
-##### System Analyst Skills
-1. **Analytical skills** - skills the analyst must have _system thinking, organizational knowledge, problem identification,_ and _problem analyzing and solving skills_
-_System thinking_ - the analyst must see everything as a system. 
+**Key Features**:
+- Provides interactive environment
+- Allows quick manipulation of data
+- Uses models of business operations
 
-_Organizational knowledge_- They must understand the functions and procedures of the particular organization they are working for. 
+**Development Focus**:
+- Database component
+- Model base component
+- User dialogue component
 
-_Problem identification_ – They must define differences by comparing the current situation to the output of a model that predicts what the output should be. 
+### 4. Expert Systems (ES)
+> [!abstract] ES
+> Attempts to codify and manipulate knowledge rather than information.
 
-_Problem analyzing and solving_ – They must analyze a problem and solve it through four phases: intelligence, design, choice, and implementation. During intelligence, all information relevant to the problem must be collected. In the design phase, alternatives should be formulated. During choice phase, the best alternative solution is chosen, and solution put into practice during implementation phase
+**Key Features**:
+- Uses knowledge representations
+- Describes how experts approach situations in specific problem domains
 
-2. **Technical skills** - They must know how various technologies work, their potentials and limitations as well as the technical know-how of how different notations for representing, or modeling various aspects information systems work.
+**Development Focus**:
+- Acquire knowledge from experts in the particular problem domain
 
-3. **Management skills** – They must know how to manage their work and how to use organizational resources in the most productive ways possible. They must demonstrate resource, project, risk, and change management skills.
+---
 
-4. **Interpersonal skills** – They needs interpersonal skills that include communication skills, groups’ facilitation skills, and skills to manage expectations of users and managers.
+## 4. Characteristics of a System
+1. **Interdependence** - Components depend on one another within the system.
+2. **Order** - The arrangement of components that helps achieve objectives; portrays system-subsystem relationships.
+3. **Integration** - Parts work together within the system, even though each part performs a unique function.
+4. **Central Objective** - Systems are goal-driven entities; every system must have goals and objectives.
+5. **Interaction** - Interrelationships between components enable the system to perform.
 
-##### Roles of System Analyst
+---
+
+## 5. System Analysis and Design
+
+### System Analysis
+> [!abstract] System Analysis
+> The process of collecting factual data, understanding processes involved, identifying problems, and recommending feasible suggestions for improving system functioning.
+
+**Activities Include**:
+- Studying business processes
+- Gathering operational data
+- Understanding information flow
+- Finding bottlenecks
+- Evolving solutions for overcoming system weaknesses
+- Achieving organizational goals
+
+### System Design
+> [!abstract] System Design
+> The process of specifying the new system, detailing tasks to be carried out and data to be input, output, and stored.
+
+**Design Phases**:
+1. **Logical Design** - Specifies functions to be carried out without tying them to specific hardware or software.
+2. **Physical Design** - Provides precise details of hardware, software, file formats, etc.
+
+---
+
+## 6. System Analyst
+
+### Role and Responsibilities
+> [!abstract] System Analyst
+> A professional in charge of analyzing, designing, and modifying systems to ensure compatibility and user effectiveness.
+
+### System Analyst Skills
+
+#### 1. Analytical Skills
+The analyst must possess system thinking, organizational knowledge, problem identification, and problem-solving skills.
+
+- **System Thinking**: The analyst must view everything as a system.
+- **Organizational Knowledge**: Must understand the functions and procedures of the organization they work for.
+- **Problem Identification**: Must define differences by comparing the current situation to predicted outputs.
+- **Problem Analyzing and Solving**: Must analyze problems through four phases:
+  1. **Intelligence** - Collect all relevant information
+  2. **Design** - Formulate alternatives
+  3. **Choice** - Select the best alternative solution
+  4. **Implementation** - Put solution into practice
+
+#### 2. Technical Skills
+- Understand how various technologies work
+- Know potentials and limitations of technologies
+- Possess technical know-how of different notations for representing/modeling information systems
+
+#### 3. Management Skills
+- Know how to manage work effectively
+- Use organizational resources productively
+- Demonstrate resource, project, risk, and change management skills
+
+#### 4. Interpersonal Skills
+- Communication skills
+- Group facilitation skills
+- Skills to manage expectations of users and managers
+
+### Roles of System Analyst
 1. Business Analysis
-2. Requirements elicitation (To produce requirements)
-3. Infrastructure analysis
-4. Change management by providing adequate documentation and support to users
-5. Project Manager
+2. Requirements Elicitation (producing requirements)
+3. Infrastructure Analysis
+4. Change Management (providing adequate documentation and support to users)
+5. Project Management
 
+---
 
-## System Development Life Cycle (SDLC)
-The **system development life cycle (SDLC)** is a common methodology for systems development that features several phases that mark the progress of the system analysis and design effort.
+## 7. System Development Life Cycle (SDLC)
+> [!abstract] SDLC
+> A common methodology for systems development that features several phases marking the progress of system analysis and design effort.
+
+### SDLC Phases (Waterfall Model)
+
 ```mermaid
 flowchart LR
     A[Project Identification and Selection] --> B[Project Initiation and Planning]
@@ -136,68 +233,159 @@ flowchart LR
     C -->B
     B --> A
 ```
-This presentation is known as the *waterfall model*.
-At the end of each phase (and sometimes within phases for intermediate steps), a project reaches a milestone and, as deliverables are produced, they are often reviewed by parties outside the project team
 
-1. **Project Identification and selection**
+> [!note] Milestones and Deliverables
+> At the end of each phase (and sometimes within phases for intermediate steps), a project reaches a milestone. Deliverables produced are often reviewed by parties outside the project team.
 
-This is the first phase of SDLC where the need for a new or enhanced system is identified.  This need is examined and projects to meet this need are identified. These needs result from requests to deal with problems in current procedures, desire to perform additional tasks, or from realization that IT could be used to capitalize on an existing opportunity.  These needs are then prioritized and translated into a plan that includes a schedule for developing new major systems.
+### Phase 1: Project Identification and Selection
+**Purpose**: Identify the need for a new or enhanced system.
 
-System analyst determines whether or not resources should be devoted to the development or enhancement of system under consideration. The outcome of this phase is determination of which system development projects should be undertaken.
+**Activities**:
+- Examine needs resulting from:
+  - Problems in current procedures
+  - Desire to perform additional tasks
+  - Realization that IT could capitalize on existing opportunities
+- Prioritize identified needs
+- Translate needs into a development schedule
 
-2. **Project initiation and planning**
-This is the second phase that involves two activities: investigation of system problem or opportunity at hand, and the presentation of reasons why the system should or should not be developed by the organization. The scope of the proposed system is determined and a specific plan to be followed by the project team is produced. The baseline is to specify the time and resources needed for the execution of the system. This forms the likelihood that system analyst and IS department will develop a system that will solve the problem or exploit the opportunity and also determine whether the costs of developing the system outweighs the benefits it could provide.
+**Outcome**: Determination of which system development projects should be undertaken based on available resources.
 
-3. **Analysis**
-In this phase, the analysts thoroughly studies the current procedures of the business and the information system used to perform those tasks for the following reasons:
--  **Requirement determination** – determine what users want from the proposed system. This involves careful scrutiny of current systems, manual or computerized, that will be replaced or enhanced.
+### Phase 2: Project Initiation and Planning
+**Purpose**: Investigate the system problem or opportunity and determine project feasibility.
 
-- Studying the requirements and structuring them according to their interrelationships, and eliminating any redundancy.
+**Activities**:
+1. **Investigation**: Examine the system problem or opportunity at hand
+2. **Justification**: Present reasons why the system should or should not be developed
+3. **Scope Determination**: Define the boundaries of the proposed system
+4. **Project Planning**: Produce a specific plan including:
+   - Time requirements
+   - Resource requirements
+   - Execution strategy
 
-- Generating alternative initial designs that match the requirements
+**Key Question**: Do the benefits of developing the system outweigh the costs?
 
-- Comparing the generated alternative designs to determine the one that best meets the requirements within the cost, labor and technical levels of the organization.
+### Phase 3: Analysis
+**Purpose**: Thoroughly study current procedures and information systems.
 
-The output of this phase is a description of (but not a detailed design for) the alternative solution recommended by the analysis team.
+**Activities**:
+1. **Requirement Determination**: Determine what users want from the proposed system through careful scrutiny of current systems (manual or computerized).
+2. **Requirement Structuring**: Study requirements, structure them according to interrelationships, and eliminate redundancy.
+3. **Alternative Generation**: Generate alternative initial designs that match the requirements.
+4. **Alternative Comparison**: Compare generated alternatives to determine the best fit within cost, labor, and technical constraints.
 
-4. **Design**
-In this phase, the description of the recommended alternative solution is converted into logical and then physical system specifications. All aspects of the system, from input and output screens to reports, databases and computer processes must be designed. This is followed by provision of physical specifications of the designed system, either as a model or as a detailed documentation, to guide those who will build the system.
+**Outcome**: A description (but not detailed design) of the recommended alternative solution.
 
-The part of the design that is independent of any specific hardware or software platform is referred to as **logical design.** It concentrates on the business aspects of the system and tends to be oriented to a high level specificity.  Once the overall high-level design of the system is worked out, they are turned into physical specifications, a process referred to as **physical design.** Various parts of the system to perform the physical operations necessary to facilitate data capture, processing, and information output is designed.
+### Phase 4: Design
+**Purpose**: Convert the recommended solution into logical and physical system specifications.
 
-5. **Implementation**
+**Two Design Types**:
 
-In this phase, system specifications are turned into a working system that is tested and then put into use. Implementation includes coding, testing and installation. During coding, programmers write the programs that make up the system. During testing, programmers and analysts test individual programs and the entire system in order to find and correct errors. During installation, the new system becomes a part of the daily activities of the organization where system is loaded on new or existing hardware and users are introduced into the new system and trained.
+1. **Logical Design**: Independent of any specific hardware or software platform
+   - Concentrates on business aspects of the system
+   - Oriented to high-level specificity
 
-6. **Maintenance**
-This is the final phase which is the overlay to the life cycle. Sometimes users find problems with how system works and often think of better ways to perform its tasks. Programmers make changes that users ask for and modify system to reflect changing business needs. These changes are necessary to keep the system running and useful.
+2. **Physical Design**: Provides precise details of:
+   - Hardware specifications
+   - Software specifications
+   - File formats
+   - Physical operations for data capture, processing, and information output
 
-## System Development Methodologies
+**Outcome**: Physical specifications of the designed system (as a model or detailed documentation) to guide system builders.
 
-#### Structured System Analysis and Design
+### Phase 5: Implementation
+**Purpose**: Turn system specifications into a working system.
 
-It uses a series of phases known as SDLC which incorporates process models to describe a system graphically. Process models show the data that flows in and out of system processes. It also addresses data organization and structure, relational database design, and user interface issues.
+**Activities**:
+1. **Coding**: Programmers write the programs that make up the system
+2. **Testing**: Programmers and analysts test:
+   - Individual programs
+   - The entire system
+   - Find and correct errors
+3. **Installation**: 
+   - Load system on new or existing hardware
+   - Introduce users to the new system
+   - Provide user training
 
-Usually, when one phase ends, another begins when milestone has been reached. A milestone usually took the form of some deliverables or pre-specified output from phase. Currently, it is easier to go back to earlier phases in the life cycle when necessary. It additionally emphasizes on partitioning or dividing a problem into smaller, more manageable units and on making clear distinction between physical and logical design.  
+**Outcome**: A working, tested system in daily organizational use.
 
-#### Object-Oriented Analysis and Design
+### Phase 6: Maintenance
+**Purpose**: Keep the system running and useful over time.
 
-This approach combines data and processes (methods) into single entities called objects. Objects correspond to the real things an information system deals with such as customers, suppliers, contracts, agreements etc.
+**Activities**:
+- Fix problems discovered by users
+- Modify system to reflect changing business needs
+- Implement user suggestions for improvements
 
-The goal of OOAD is to make system elements more reusable, thus improving system quality and productivity of system analysis and design.
+> [!note] Ongoing Phase
+> Maintenance is an overlay to the life cycle. It continues throughout the system's operational life.
 
-Generally, the primary task of OOA is identification of objects, definition of their structures and behavior, and definition of their relationships.  OOD, on the other hand, models the details of object’s behavior and communication with other objects so that system requirements are met, reexamined and redefined to take advantage of benefits of object-orientation.
+---
 
-#### Agile/adaptive
+## 8. System Development Methodologies
 
-These are the newest methods that attempt to make system development less of an art and more of science. Rigorous engineering techniques are applied.  A system is developed incrementally, by building a series of prototypes and constantly adjusting them to user requirements. As the agile process continues, developers revise, extend, and merge earlier versions into the final product.
+### 1. Structured System Analysis and Design
+> [!abstract] Structured SAD
+> Uses a series of phases (SDLC) incorporating process models to describe a system graphically.
 
-The approach emphasizes continuous feedback, and each incremental step is affected by what was learned in the prior steps.  It has attracted a wide following and an entire community of users.
+**Key Features**:
+- Uses process models to show data flow in and out of system processes
+- Addresses data organization and structure
+- Includes relational database design
+- Handles user interface issues
+- Emphasizes partitioning (dividing problems into smaller, manageable units)
+- Makes clear distinction between physical and logical design
 
+**Milestone-Based Approach**:
+- Phases end when milestones are reached
+- Milestones typically take the form of deliverables or pre-specified outputs
+- Easier to return to earlier phases when necessary
 
-|                    | **STRUCTURED SAD**                                                                                                                                                                                                                    | **OBJECT-ORIENTED AD**                                                                                                                                                                                  | **AGILE/ADAPTIVE METHODS**                                                                                                                                                                                           |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Description**    | Represents the system in terms of data and the processes that act upon that data.<br><br>System development is organized into phases with deliverables and milestones to measure progress.<br><br>Iteration is possible among phases. | View system as objects that combine data and processes.<br><br>They are more iterative.                                                                                                                 | Stresses intense team-based efforts.<br><br>Breaks development process down into cycles, or iterations that add functionality.<br><br>Attempts to reduce major risks by incremental steps in short intervals.        |
-| **Modeling Tools** | Data flow diagrams (DFD) and process descriptions                                                                                                                                                                                     | Various OO diagrams that depict system actors, methods and messages                                                                                                                                     | Tools that enhance communication, such as collaborative software, brainstorming and whiteboards.                                                                                                                     |
-| **Pros**           | Relies heavily on written documentation. Frequent phase iteration provides flexibility comparable with other methods. Well suited to project management tools and techniques.                                                         | Integrates easily with OO programming languages. Code is modular and reusable, reducing development time and cost. Easy to maintain and expand as new objects can be cloned using inherited properties. | Very flexible and efficient in dealing with change. Stresses team interaction and reflects a set of community-based values. Frequent deliverables constantly validate the project and reduce risk.                   |
-| **Cons**           | Changes can be costly, especially in later phases. Requirements are defined early, and can change during development. Users might not be able to describe their needs until they can see examples of features and functions.          | Interaction of objects and classes can be complex in larger systems.                                                                                                                                    | Team members need a high level of technical and communications skills. Lack of structure and documentation can introduce risk factors. Overall project might be subject to scope change as user requirements change. |
+### 2. Object-Oriented Analysis and Design (OOAD)
+> [!abstract] OOAD
+> Combines data and processes (methods) into single entities called objects.
+
+**Key Concepts**:
+- Objects correspond to real things an information system deals with (customers, suppliers, contracts, agreements, etc.)
+- Goal is to make system elements more reusable
+- Improves system quality and productivity
+
+**Object-Oriented Analysis (OOA)**:
+- Identify objects
+- Define object structures and behaviors
+- Define object relationships
+
+**Object-Oriented Design (OOD)**:
+- Model details of object behavior
+- Model object communication
+- Ensure system requirements are met
+- Reexamine and redefine to take advantage of object-orientation benefits
+
+### 3. Agile/Adaptive Methods
+> [!abstract] Agile
+> Attempts to make system development less of an art and more of a science by applying rigorous engineering techniques.
+
+**Key Features**:
+- System developed incrementally
+- Builds a series of prototypes
+- Constantly adjusts to user requirements
+- Developers revise, extend, and merge earlier versions into the final product
+
+**Philosophy**:
+- Emphasizes continuous feedback
+- Each incremental step is affected by learning from prior steps
+- Has attracted a wide following and entire community of users
+
+---
+
+## 9. Methodology Comparison
+| **Aspect**         | **Structured SAD**                                                                                                          | **Object-Oriented AD**                                                                                                                 | **Agile/Adaptive Methods**                                                                                                                  |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Description**    | Represents system in terms of data and processes. Organized into phases with deliverables and milestones. Iteration possible. | Views system as objects combining data and processes. More iterative approach.                                                          | Stresses team-based efforts. Breaks development into cycles/iterations. Reduces risks through incremental steps in short intervals.         |
+| **Modeling Tools** | Data Flow Diagrams (DFD), Process descriptions                                                                              | Various OO diagrams depicting system actors, methods, and messages                                                                     | Communication tools: collaborative software, brainstorming, whiteboards                                                                     |
+| **Pros**           | Heavy documentation. Flexible phase iteration. Well-suited to project management tools.                                     | Integrates with OO programming languages. Modular, reusable code. Easy maintenance and expansion through inheritance.                  | Very flexible with change. Strong team interaction. Frequent deliverables validate project and reduce risk.                                 |
+| **Cons**           | Changes costly in later phases. Early requirement definition can become outdated. Users may not know needs until seeing examples. | Object and class interactions can be complex in larger systems.                                                                        | Requires high technical and communication skills. Lack of structure/documentation introduces risk. Subject to scope change. |
+
+---
+
+> [!tip] Study Summary
+> System Analysis and Design involves understanding how systems work, identifying their components, and developing methodologies to build effective information systems. The SDLC provides a structured approach, while different methodologies (Structured, OO, Agile) offer various ways to tackle system development challenges.

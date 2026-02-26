@@ -1,0 +1,164 @@
+title: "System Analysis and Design Introduction"
+unit: "STU 1203 SYSTEMS ANALYSIS AND DESIGN"
+cards:
+  - id: "sad-intro-card-0"
+    question: "What is a System?"
+    answer: "An orderly grouping of interdependent components, linked together according to a plan, to achieve a specific objective."
+  - id: "sad-intro-card-1"
+    question: "Define System Analysis"
+    answer: "The process of collecting factual data, understanding processes, identifying problems, and recommending feasible improvements."
+  - id: "sad-intro-card-2"
+    question: "Define System Design"
+    answer: "The process of specifying a new system's architecture, components, modules, interfaces, and data."
+  - id: "sad-intro-card-3"
+    question: "What is SDLC?"
+    answer: "System Development Life Cycle - a common methodology for systems development featuring several phases."
+  - id: "sad-intro-card-4"
+    question: "What are the 6 parts/elements of a system?"
+    answer: |
+            1. Components - Individual parts that enable conversion of input into output
+            2. Inputs and Outputs - Generate value to the user
+            3. Boundaries and Interfaces - Limits and interactions with environment
+            4. Environment - The supra-system within which organization operates
+            5. Constraints/Control - Elements that regulate system operations
+            6. Purpose - Key objectives the system must fulfill
+  - id: "sad-intro-card-5"
+    question: "What is the first step in specifying the nature of input required to operate a system?"
+    answer: "Determination of the desired output."
+  - id: "sad-intro-card-6"
+    question: "What is the difference between system boundaries and interfaces?"
+    answer: |
+            Boundaries: The limits that identify the system's components, processes, and interrelationships when it interacts with other systems.
+            Interfaces: The interactions between the system and its environment.
+  - id: "sad-intro-card-7"
+    question: "What are the three types of systems based on their physical nature?"
+    answer: |
+            1. Physical Systems - Concrete entities (static or dynamic)
+            2. Abstract Systems - Non-physical entities (formulas, models)
+            3. Natural vs Man-made Systems
+  - id: "sad-intro-card-8"
+    question: "What is an Open System?"
+    answer: "A system that interacts with its environment."
+  - id: "sad-intro-card-9"
+    question: "What is a Closed System?"
+    answer: "A system that does not interact with its environment. (Note: Nearly impossible in practice)"
+  - id: "sad-intro-card-10"
+    question: "What is a Transaction Processing System (TPS)?"
+    answer: "A system that automates the handling of data about business activities or transactions—simple, discrete events in the life of an organization."
+  - id: "sad-intro-card-11"
+    question: "What is a Management Information System (MIS)?"
+    answer: "A system that converts raw data from TPS into meaningful aggregated information that managers need to conduct their responsibilities."
+  - id: "sad-intro-card-12"
+    question: "What is a Decision Support System (DSS)?"
+    answer: "A system designed to help organizational decision makers make decisions by providing an interactive environment to manipulate data and business models."
+  - id: "sad-intro-card-13"
+    question: "What is an Expert System (ES)?"
+    answer: "A system that attempts to codify and manipulate knowledge rather than information, using knowledge representations that describe how experts approach situations."
+  - id: "sad-intro-card-14"
+    question: "List the 5 characteristics of a system"
+    answer: |
+            1. Interdependence - Components depend on one another
+            2. Order - Arrangement that helps achieve objectives
+            3. Integration - Parts work together despite unique functions
+            4. Central Objective - Goal-driven entities
+            5. Interaction - Interrelationships enable performance
+  - id: "sad-intro-card-15"
+    question: "What are the two phases of System Design?"
+    answer: |
+            1. Logical Design - Independent of hardware/software, focuses on business aspects
+            2. Physical Design - Precise details of hardware, software, file formats
+  - id: "sad-intro-card-16"
+    question: "What are the 4 types of skills a System Analyst must have?"
+    answer: |
+            1. Analytical Skills - System thinking, organizational knowledge, problem identification and solving
+            2. Technical Skills - Knowledge of technologies, potentials, limitations
+            3. Management Skills - Resource, project, risk, and change management
+            4. Interpersonal Skills - Communication, facilitation, expectation management
+  - id: "sad-intro-card-17"
+    question: "What are the 4 phases of problem analyzing and solving?"
+    answer: |
+            1. Intelligence - Collect all relevant information
+            2. Design - Formulate alternatives
+            3. Choice - Select the best alternative
+            4. Implementation - Put solution into practice
+  - id: "sad-intro-card-18"
+    question: "List the 5 roles of a System Analyst"
+    answer: |
+            1. Business Analysis
+            2. Requirements Elicitation
+            3. Infrastructure Analysis
+            4. Change Management
+            5. Project Management
+  - id: "sad-intro-card-19"
+    question: "What are the 6 phases of SDLC (in order)?"
+    answer: |
+            1. Project Identification and Selection
+            2. Project Initiation and Planning
+            3. Analysis
+            4. Design
+            5. Implementation
+            6. Maintenance
+  - id: "sad-intro-card-20"
+    question: "What is the purpose of the Project Identification and Selection phase?"
+    answer: "Identify the need for a new or enhanced system, examine needs, prioritize them, and determine which projects should be undertaken."
+  - id: "sad-intro-card-21"
+    question: "What are the 4 activities in the Analysis phase of SDLC?"
+    answer: |
+            1. Requirement Determination - What users want
+            2. Requirement Structuring - Organize and eliminate redundancy
+            3. Alternative Generation - Create initial designs
+            4. Alternative Comparison - Determine best fit within constraints
+  - id: "sad-intro-card-22"
+    question: "What are the 3 activities in the Implementation phase?"
+    answer: |
+            1. Coding - Write the programs
+            2. Testing - Test individual programs and entire system
+            3. Installation - Load system and train users
+  - id: "sad-intro-card-23"
+    question: "What is the purpose of the Maintenance phase?"
+    answer: "Keep the system running and useful over time by fixing problems, modifying for changing needs, and implementing improvements."
+  - id: "sad-intro-card-24"
+    question: "What are the 3 main system development methodologies?"
+    answer: |
+            1. Structured System Analysis and Design
+            2. Object-Oriented Analysis and Design (OOAD)
+            3. Agile/Adaptive Methods
+  - id: "sad-intro-card-25"
+    question: "What are the key features of Structured SAD?"
+    answer: |
+            - Uses process models (DFD) to show data flow
+            - Milestone-based approach with deliverables
+            - Emphasizes partitioning problems
+            - Clear distinction between physical and logical design
+  - id: "sad-intro-card-26"
+    question: "What is the main concept of Object-Oriented Analysis and Design (OOAD)?"
+    answer: "Combines data and processes (methods) into single entities called objects that correspond to real things, making system elements more reusable."
+  - id: "sad-intro-card-27"
+    question: "What are the key features of Agile/Adaptive Methods?"
+    answer: |
+            - System developed incrementally
+            - Builds series of prototypes
+            - Constantly adjusts to user requirements
+            - Emphasizes continuous feedback
+            - Reduces risks through incremental steps
+  - id: "sad-intro-card-28"
+    question: "What are the modeling tools used in Structured SAD?"
+    answer: "Data Flow Diagrams (DFD) and process descriptions"
+  - id: "sad-intro-card-29"
+    question: "What are the main advantages of OOAD?"
+    answer: |
+            - Integrates with OO programming languages
+            - Modular, reusable code
+            - Easy maintenance and expansion through inheritance
+  - id: "sad-intro-card-30"
+    question: "What are the main disadvantages of Structured SAD?"
+    answer: |
+            - Changes costly in later phases
+            - Early requirement definition can become outdated
+            - Users may not know needs until seeing examples
+  - id: "sad-intro-card-31"
+    question: "What are the main disadvantages of Agile methods?"
+    answer: |
+            - Requires high technical and communication skills
+            - Lack of structure/documentation introduces risk
+            - Subject to scope change as requirements evolve
