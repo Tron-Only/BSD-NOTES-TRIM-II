@@ -3,24 +3,24 @@ unit: "STU 1201 INTRODUCTION TO PROGRAMMING"
 cards:
   - id: "algorithms-card-0"
     question: "What is an Algorithm?"
-    answer: "A step-by-step procedure for solving a problem."
+    answer: "A finite sequence of well-defined, computer-implementable instructions, typically to solve a class of specific problems or to perform a computation."
   - id: "algorithms-card-1"
     question: "Define pseudo-code"
-    answer: "An informal high-level description of an algorithm using English-like phrases."
+    answer: "An informal high-level description of an algorithm using English-like phrases. It helps programmers develop algorithms and is similar to English but mimics the structure of actual code."
   - id: "algorithms-card-2"
     question: "What is a flowchart?"
-    answer: "A graphical representation of an algorithm using standard symbols"
+    answer: "A graphical representation of an algorithm using standard symbols."
   - id: "algorithms-card-3"
     question: "What is a sequence?"
     answer: "A set of instructions executed one after another."
   - id: "algorithms-card-4"
-    question: "What are the characteristics of a good algorithm"
+    question: "What are the 5 characteristics of a good algorithm?"
     answer: |
-            - It should be clear and precise.
-            - The same input should always produce the same output.
-            - It must terminate after a finite number of steps.
-            - It should take zero or more well defined inputs.
-            - It should produce at least one well defined output.
+            1. Precise - Each step should be clear and unambiguous
+            2. Unique - The same input should always produce the same output
+            3. Finite - It must terminate after a finite number of steps
+            4. Input - It should take zero or more well-defined inputs
+            5. Output - It should produce at least one well-defined output
   - id: "algorithms-card-5"
     question: |
             List what each of the following operators stand for:
@@ -35,5 +35,192 @@ cards:
             - -> Subtraction
             * -> Multiplication
             / -> Division
-            % -> Modulus
+            % -> Modulus (Remainder)
             ** -> Exponent
+  - id: "algorithms-card-6"
+    question: "What are the 4 problem-solving steps that developers follow?"
+    answer: |
+            1. Decomposition - Breaking down a complex problem into smaller, manageable parts
+            2. Pseudo-code - Drafting the logic using informal language
+            3. Refinement - Successive iterations to make algorithm more detailed
+            4. Implementation - Translating the refined algorithm into a programming language
+  - id: "algorithms-card-7"
+    question: "What is decomposition in problem solving?"
+    answer: "Breaking down a complex problem into smaller, manageable parts."
+  - id: "algorithms-card-8"
+    question: "What is refinement in algorithm development?"
+    answer: "Successive iterations of the algorithm to make it more detailed and closer to computer code."
+  - id: "algorithms-card-9"
+    question: "What is implementation in algorithm development?"
+    answer: "Translating the refined algorithm into a specific programming language."
+  - id: "algorithms-card-10"
+    question: "Write the algorithm for calculating the area of a circle given radius r"
+    answer: |
+            STEP 1: START
+            STEP 2: INPUT r
+            STEP 3: PI = 3.14159
+            STEP 4: AREA = PI * r * r
+            STEP 5: PRINT AREA
+            STEP 6: STOP
+  - id: "algorithms-card-11"
+    question: "Write the algorithm for adding two numbers"
+    answer: |
+            STEP 1: START
+            STEP 2: INPUT X1, X2
+            STEP 3: SUM = X1 + X2
+            STEP 4: PRINT SUM
+            STEP 5: STOP
+  - id: "algorithms-card-12"
+    question: "Write the algorithm for a student grading system (Pass mark = 50, input 4 marks)"
+    answer: |
+            STEP 1: START
+            STEP 2: INPUT M1, M2, M3, M4
+            STEP 3: SUM = M1 + M2 + M3 + M4
+            STEP 4: AVERAGE = SUM / 4
+            STEP 5: IF AVERAGE >= 50 THEN
+                        PRINT "PASS"
+                    ELSE
+                        PRINT "FAIL"
+                    ENDIF
+            STEP 6: STOP
+  - id: "algorithms-card-13"
+    question: "What are the 7 standard flowchart symbols?"
+    answer: |
+            1. Terminal - Indicates start or end (oval shape)
+            2. Process - Calculation or data manipulation (rectangle)
+            3. Input/Output - Data entry or display (parallelogram)
+            4. Decision - Logic test with Yes/No paths (diamond)
+            5. Predefined Process - Sub-routine or named process (rectangle with double lines)
+            6. Connector - Joins different parts (small circle)
+            7. Flow Lines - Shows direction of flow (arrows)
+  - id: "algorithms-card-14"
+    question: "What is a Terminal symbol in a flowchart?"
+    answer: "The symbol used to indicate the beginning (START) and end (STOP) of a process. Represented by an oval shape."
+  - id: "algorithms-card-15"
+    question: "What is a Decision symbol in a flowchart?"
+    answer: "A symbol (diamond shape) used to represent a branching point where a condition is tested, resulting in two possible paths (Yes/No or True/False)."
+  - id: "algorithms-card-16"
+    question: "What is a Process symbol in a flowchart?"
+    answer: "A rectangle that represents a calculation or data manipulation."
+  - id: "algorithms-card-17"
+    question: "What is an Input/Output symbol in a flowchart?"
+    answer: "A parallelogram that represents data entry (INPUT) or display (PRINT)."
+  - id: "algorithms-card-18"
+    question: "What are the 4 general rules for creating flowcharts?"
+    answer: |
+            1. Flow Direction - Processes should flow from top to bottom or left to right
+            2. Connection - All boxes must be connected with arrows (flow lines)
+            3. Entry Points - Symbols should have an entry point exclusively at the top
+            4. Exit Points - Most symbols have one exit point at the bottom, except Decision symbol which has two
+  - id: "algorithms-card-19"
+    question: "How many exit points does a Decision symbol have in a flowchart?"
+    answer: "Exactly two exit points (True/False or Yes/No)."
+  - id: "algorithms-card-20"
+    question: "What is a Variable?"
+    answer: "A named memory location used to store data that can be changed during program execution. It acts as a container for data that can be reused and modified."
+  - id: "algorithms-card-21"
+    question: "What is a Data Type?"
+    answer: "A classification that specifies which type of value a variable can hold and what operations can be performed on it."
+  - id: "algorithms-card-22"
+    question: "What is Declaration in programming?"
+    answer: "The process of defining a variable's name and type before it is used."
+  - id: "algorithms-card-23"
+    question: "What is Initialization in programming?"
+    answer: "Assigning an initial value to a variable at the time of declaration."
+  - id: "algorithms-card-24"
+    question: "What is a Format Specifier?"
+    answer: "A placeholder used in I/O functions (like printf and scanf) to define the data type."
+  - id: "algorithms-card-25"
+    question: "What are the 5 rules for naming variables?"
+    answer: |
+            1. Length - Maximum of 30 characters (compiler dependent)
+            2. Characters - Can include letters (A-Z, a-z) and numbers (0-9)
+            3. Start - Must always start with a letter or underscore (_)
+            4. Symbols - No special characters or blank spaces, except underscores
+            5. Reserved Words - Keywords (int, return, float) cannot be used as variable names
+  - id: "algorithms-card-26"
+    question: "Can a variable name start with a number?"
+    answer: "No. A variable name must always start with a letter or an underscore (_)."
+  - id: "algorithms-card-27"
+    question: "Can keywords like 'int' or 'return' be used as variable names?"
+    answer: "No. Reserved words/keywords cannot be used as variable names."
+  - id: "algorithms-card-28"
+    question: "What is the syntax for declaring a variable in C++?"
+    answer: "data_type variable_name;"
+  - id: "algorithms-card-29"
+    question: "What is the difference between declaration and initialization?"
+    answer: |
+            Declaration - Defining a variable's name and type (e.g., int x;)
+            Initialization - Declaration + assigning an initial value (e.g., int x = 100;)
+  - id: "algorithms-card-30"
+    question: |
+            Match the format specifiers to their meanings:
+            %d, %f, %.2f, %c, %s, %lf
+    answer: |
+            %d -> Decimal Integer
+            %f -> Floating Point
+            %.2f -> Float (2 Decimal Places)
+            %c -> Character
+            %s -> String
+            %lf -> Double (Long Float)
+  - id: "algorithms-card-31"
+    question: "What format specifier is used for printing integers?"
+    answer: "%d (Decimal Integer)"
+  - id: "algorithms-card-32"
+    question: "What format specifier is used for printing strings?"
+    answer: "%s"
+  - id: "algorithms-card-33"
+    question: "What format specifier is used for printing a character?"
+    answer: "%c"
+  - id: "algorithms-card-34"
+    question: "What format specifier is used for printing a float with 2 decimal places?"
+    answer: "%.2f"
+  - id: "algorithms-card-35"
+    question: |
+            What do the following escape sequences do?
+            \n, \t, \\, \", \', \a
+    answer: |
+            \n -> New Line
+            \t -> Tab (Horizontal)
+            \\ -> Backslash
+            \" -> Double Quote
+            \' -> Single Quote
+            \a -> Alert (Beep)
+  - id: "algorithms-card-36"
+    question: "What escape sequence creates a new line?"
+    answer: "\\n"
+  - id: "algorithms-card-37"
+    question: "What escape sequence creates a tab space?"
+    answer: "\\t"
+  - id: "algorithms-card-38"
+    question: "What escape sequence is used to print a backslash?"
+    answer: "\\\\"
+  - id: "algorithms-card-39"
+    question: "What escape sequence is used to print a double quote inside a string?"
+    answer: '\\"'
+  - id: "algorithms-card-40"
+    question: "What escape sequence creates an alert sound (beep)?"
+    answer: "\\a"
+  - id: "algorithms-card-41"
+    question: "Write a C++ program to store 100 in variable a and print it"
+    answer: |
+            #include <iostream>
+            #include <cstdio>
+
+            int main() {
+                int a = 100;
+                printf("The value of a is: %d\n", a);
+                return 0;
+            }
+  - id: "algorithms-card-42"
+    question: "What is the assignment operator in C++?"
+    answer: "= (equals sign)"
+  - id: "algorithms-card-43"
+    question: "Must variables be declared before use in C++?"
+    answer: "Yes. Variables must be declared before they are used to inform the compiler about the amount of memory to allocate."
+  - id: "algorithms-card-44"
+    question: "What character must end every declaration statement in C++?"
+    answer: "Semi-colon (;)"
+  - id: "algorithms-card-45"
+    question: "How do you declare multiple variables of the same type in one line?"
+    answer: "data_type variable1, variable2, variable3;"
