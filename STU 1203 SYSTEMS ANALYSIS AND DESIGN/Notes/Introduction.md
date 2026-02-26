@@ -46,8 +46,6 @@
 
 **Example 2: Exam Processing System**
 
-**Example 2: Exam Processing System**
-
 | **System**             | **Subsystems**                                    | **Interfaces**         | **Environment**                                  | **Input**                    | **Output**                                 | **Constraints/Controls**                    |
 | ---------------------- | ------------------------------------------------- | ---------------------- | ------------------------------------------------ | ---------------------------- | ------------------------------------------ | ------------------------------------------- |
 | Exam Processing System | Database systems, Operating system, Grading logic | Input forms, Dashboards | Department, University, Administrators, Students | Raw scores: CAT, Assignment, Exam | Individual results, Overall results, Reports | Submission deadlines, No partial marks |
