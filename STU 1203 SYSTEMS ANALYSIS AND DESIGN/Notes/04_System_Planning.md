@@ -55,5 +55,22 @@ Project Scope Definition is concerned by the system owners' view of the system a
 Project Constraints conditions a system must achieve in order to achieve its goal.
 Project Constraint Definition is derived by system hardware, software, time or organization policy
 
+### Perform Fact Finding
+During this stage, facts are found to find out more information about the system.
+
+Methods of fact finding include: 
+- Interviews
+- Telephone calls
+- Reviewing the document
+
+#### Feasibility Study
+This is a study that is undertaken to ascertain as to whether the project is worth undertaking and committing resources to.
+
+##### Importance of a feasibility study
+1. Improves team focus
+2. Evaluates whether a project is worth committing resources to
+
+TBC: Very boring topic </3
+
 
 
